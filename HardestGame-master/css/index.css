@@ -1,0 +1,67 @@
+/**
+ * Created by jicemoon on 2015/9/1.
+ */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after,
+.clearfix:before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.layoutRoot {
+    text-align: center;
+}
+
+.layoutRoot .game {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.layoutRoot .game .tips {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    min-width: 150px;
+    font-size: 20px;
+    padding: 5px 10px;
+    text-align: left;
+    color: #cccccc;
+}
+
+.layoutRoot .game .levelbox {
+    display: flex;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.layoutRoot .game .levelbox .level {
+    float: left;
+    width: 30px;
+    margin-right: .20rem;
+}
+
+.level img {
+    width: 100%;
+}
+
+.layoutRoot .game .tips>p span {
+    color: #ffffff;
+}
+
+.layoutRoot .game .tips>p:nth-child(2) {
+    color: #85ff02;
+}
