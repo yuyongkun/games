@@ -90,14 +90,15 @@
         this.y = ROTATION_CENTER.y + ROTATION_RADIUS * Math.sin(this.angle);
     };
     CircleRotation.prototype.paint = function (context){
+        // context.save();
+        // context.strokeStyle = this.strokeStyle?this.strokeStyle:"#000000";
+        // context.lineWidth = 1;
+        // context.moveTo(ROTATION_CENTER.x, ROTATION_CENTER.y);
+        // context.lineTo(this.x, this.y);
+        // context.stroke();
+        // context.restore();
+        // this.super.prototype.paint.call(this, context);
         context.save();
-        context.strokeStyle = this.strokeStyle?this.strokeStyle:"#000000";
-        context.lineWidth = 1;
-        context.moveTo(ROTATION_CENTER.x, ROTATION_CENTER.y);
-        context.lineTo(this.x, this.y);
-        context.stroke();
-        context.restore();
-        this.super.prototype.paint.call(this, context);
     };
     /**用来发射的小圆, 即其他注释处所说的子弹**/
     function CircleBullet(y,index,fillStyle, strokeStyle){

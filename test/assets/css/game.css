@@ -120,7 +120,7 @@ img{
     position: absolute;
     top: 34px;
     left: 106px;
-    background: url('addons/bh_lipstick/template/static/img/game_over.png');
+    background: url('./img/game_over.png');
     background-size: 100%;
 }
 .PopupBoxBtn{
